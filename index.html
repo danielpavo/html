@@ -1,17 +1,129 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body {
-                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQBBMDJKFUTvAzdkK-gx2PIX7P7Lkra90mA&s);
-            }
-        </style>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Tintes naturales</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        <style>
+            body {
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQBBMDJKFUTvAzdkK-gx2PIX7P7Lkra90mA&s);
+            }
+            /*Estilos generales */
+            *{
+                margin: O; 
+                padding: O; 
+                box-sizing: border-box;
+            } 
+        body {
+            font-family: Arial, sans-serif;
+            background: color #f4f4f9;
+             color: #333; 
+        }
+        /*Encabezado */ 
+          header {
+            background-color: #333;
+             color: white;
+              padding: 10px; 
+              text-align: center;
+          }
+          /*Menú de navegación*/ 
+          nav{
+            background-color: #555;
+             padding: 10px; 
+             text-align: center; 
+          }
+          nav ul{
+            list-style: none;
+             display: flex; 
+             justify-content: center; 
+          }
+          nav ul li{
+            margin: 0 15px;
+          }
+          nav ul li a {
+            color: white;
+             text-decoration: none;
+              padding: 10px;
+            transition: background-color 0.3s;
+          }
+          nav ul li a:hover {
+            background-color: #333;
+             border-radius: 5px;
+          }
+/*Sección de productos*/ 
+.products {
+    display: flex; 
+    flex-wrap: wrap;
+     justify-content: center;
+      padding: 20px;
+       gap: 20px;
+}
+.product-card {
+    background-color: white;
+     border: 1px solid #ddd; 
+     border-radius: 5px;
+      box-shadow: Opx 4px 8px rgba(0,O,O,0.1);
+       width: 200px; 
+       padding: 20px; 
+       text-align: center; 
+}
+
+.product-card img{
+    width: 100%;
+    height: auto;
+     border-radius: 5px;
+      margin-bottom: 10px; 
+} 
+.product-name {
+     font-size: 18px;
+      margin-bottom: 5px; 
+} 
+.product-price {
+    color: #28a745; 
+    font-weight: bold;
+     margin-bottom: 10px; 
+} 
+.buy-button { 
+    background-color: #007bff; 
+    color: white;
+     border: none; 
+     padding: 10px 15px;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.buy-button:hover {
+     background-color: #0056b3;
+}
+/*Pie de pagina */ 
+
+footer { 
+    background-color:#333;
+     color: white;
+      text-align: center;
+     Padding: 10px; 
+     Margin-top: 20px;
+}
+/*Responsive para móviles*/ 
+@media (max-width: 600px) {
+     nav ul { 
+flex-direction: column;
+     }
+.Product-card {
+     width: 100%;
+}
+}
+        </style>
      </head>
      <body>
+        <!--Encabezado-->
+        <header>
+            <h1>Tintes Naturart</h1>
+            <p>Encuentra lo mejor en tintes aqui</p>
+        </header>
+        <!--Menu de navegacion-->
+        <nav>
         <ul class="menu">
             <li><a href="Inicio.html">Inicio</a></li>
             <li><a href="Servicios.html">Servicios</a></li>
@@ -19,5 +131,39 @@
             <li><a href="Portafolio.html">Portafolio</a></li>
             <li><a href="Contacto.html">Contacto</a></li> 
         </ul>
+        </nav>
+        <!--Seccion de productos-->
+        <section class="products" id="productos">
+            <!--Tinte 1-->
+            <div class="product-card">
+                <img src="imagena.png"alt="Tinte 1">
+                <br>
+                <h3 class="product-name">Tinte 1</h3>
+                <p class="product-price">$5.00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+             <!--Tinte 2-->
+             <div class="product-card">
+                <img src="imagene.png"alt="Tinte 2">
+                <br>
+                <h3 class="product-name">Tinte 2</h3>
+                <p class="product-price">$5.00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </section>
+        <center><video width="300" height="540" controls>
+            <source src="pinturart.mp4" type="video/mp4">VIDEO NO DISPONIBLE
+        </video></center>
+         <center> <audio controls>
+            <source src="videoplayback.mp3" type="audio/mp3">AUDIO NO DISPONIBLE
+        </audio></center>
+        <center> <audio controls>
+            <source src="impor.mp3" type="audio/mp3">AUDIO NO DISPONIBLE
+        </audio></center>
+            <!--Pie de Pagina-->
+            <footer>
+                <br>
+                <p>&copy; 2024 tienda en linea. All rights reserved</p>
+            </footer>
      </body>
 </html>
